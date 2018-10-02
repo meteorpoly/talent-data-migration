@@ -20,4 +20,4 @@ In order to run the below procedure you will need:
 - CDS for Apps Source Environment
 - CDS for Apps Target Environment
 - Administrative rights on both environments
-- Download the DataMigrationUtility from [here](https://github.com/meteorpoly/talent-data-migration/blob/master/ConfigurationMigration.zip)
+- Download the DataMigrationUtility from [here](https://github.com/meteorpoly/talent-data-migration/raw/master/ConfigurationMigration.zip)
