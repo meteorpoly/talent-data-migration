@@ -9,5 +9,5 @@ Following scenarios could be enabled by this tool:
 - You have a production environment with great data and want to us it for Development, UAT (User Acceptance Tests), Payroll and Power platform integration tests
 - Quick and non-production back-up and restore 
 
-High-Level Sync Flow: 
+## High-Level Sync Flow: 
 ![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/High-level%20synch%20flow.gif "High-level flow")
