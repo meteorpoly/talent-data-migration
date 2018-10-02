@@ -11,7 +11,7 @@ Following scenarios could be enabled by this tool:
 - Quick and non-production back-up and restore 
 
 ## High-Level Sync Flow: 
-![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/High-level%20synch%20flow.gif "High-level flow")
+![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/High-level%20synch%20data%20flow.gif "High-level flow")
 
 ## Prerequisites
 In order to run the below procedure you will need:
