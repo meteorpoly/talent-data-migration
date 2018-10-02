@@ -23,6 +23,10 @@ In order to run the below procedure you will need:
 
 ### Setup instructions
 - Download the **TalentMigration** from [here](https://github.com/meteorpoly/talent-data-migration/raw/master/TalentMigration.zip)
-- Create a new folder under your C: drive and call it **talent-migration**
+- Create a new folder under your **C:** drive and call it **talent-migration**
 - Extract the  downloaded contents file into the newly created folder
+
+### Data import processing steps
 - Navigate to the subfolder *C:\talent-migration\ConfigurationMigration\"* and double-click on **DataMigrationUtility.exe**
+- 
+
