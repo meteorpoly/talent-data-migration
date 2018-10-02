@@ -53,4 +53,17 @@ In order to run the below procedure you will need:
 - Click **Import Data** and wait until the process is finsished (it might run more than 10 minutes, depending on volume of course)
 
 ### Validate your import
-- Opent the Target Talent Environment at https://attract.talent.dynamics.com/jobs for instance 
+Open the Target Talent App (and Environment) at https://attract.talent.dynamics.com/jobs and check if all data is present. 
+
+### Important steps to enable cross tenant  imports
+In case you don't see the data you will need to open the Worker entity in Excel and adjust the Worker's:
+- *Office Graph Identifier* - can be retrieved via the Office Graph Explorer https://developer.microsoft.com/en-us/graph/graph-explorer 
+- *Primary Email Address* - The Target Environment Talent User's mail
+- *User (Lookup)* - The Target Environment Talent User Object (will be selectable on the right task pane in excel)
+
+Enjoy!
+
+### License
+The MIT License (MIT)
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
