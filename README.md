@@ -13,6 +13,20 @@ Following scenarios could be enabled by this tool:
 ## 
 ![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/High-level%20synch%20data%20flow.gif "High-level flow")
 
+## How does the Configuration Migration tool work?
+The following diagram illustrates how the Configuration Migration tool is used for migrating configuration data.
+
+![Config Manager](https://docs.microsoft.com/en-gb/dynamics365/customer-engagement/admin/media/config-migration-process-flow.png "Configuration Manager")
+
+**Step 1**: Define the schema of the source data to be exported: The schema file (.xml) contains information about the data that you want to export such as the entities, attributes, relationships, definition of uniqueness of the data, and whether the plug-ins should be disabled before exporting the data. More information: Create a schema to export configuration data
+
+**Step 2**: Use the schema to export data: Use the schema file to export the data into a .zip file that contains the data and the schema of the exported data. More information: Create a schema to export configuration data
+
+**Step 3**: Import the exported data: Use the exported data (.zip file) to import into the target Dynamics 365 instance. The data import is done in multiple passes to first import the foundation data while queuing up the dependent data, and then import the dependent data in the subsequent passes to handle any data dependencies or linkages. This ensures clean data import. More information: Import configuration data
+
+### More details can be found here
+https://docs.microsoft.com/en-gb/dynamics365/customer-engagement/admin/manage-configuration-data#how-does-the-configuration-migration-tool-work
+
 ## Prerequisites
 In order to run the below procedure you will need:
 
