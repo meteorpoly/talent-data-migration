@@ -16,8 +16,8 @@ Following scenarios could be enabled by this tool:
 ## Prerequisites
 In order to run the below procedure you will need:
 
-Talent Instance(s) with a
-CDS for Apps Source Environment
-CDS for Apps Target Environment
-Administrative rights on both environments
-Download the DataMigrationUtility from here
+### Talent Instance(s) with a
+- CDS for Apps Source Environment
+- CDS for Apps Target Environment
+- Administrative rights on both environments
+- Download the DataMigrationUtility from [here](https://github.com/meteorpoly/talent-data-migration/blob/master/ConfigurationMigration.zip)
