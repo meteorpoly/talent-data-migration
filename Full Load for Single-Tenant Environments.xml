@@ -1,0 +1,1523 @@
+<entities  dateMode="relative">
+  <entity name="msdyn_candidate" displayname="Candidate" etc="10037" primaryidfield="msdyn_candidateid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="B2C object refernce" name="msdyn_b2cobjectid" type="string" customfield="true" />
+      <field displayname="Candidate" name="msdyn_candidateid" type="guid" primaryKey="true" />
+      <field displayname="Candidate number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Candidate status" name="msdyn_candidatestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Candidate status reason" name="msdyn_candidatestatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Comment" name="msdyn_comment" type="string" customfield="true" />
+      <field displayname="Email alternate" name="msdyn_emailalternate" type="string" customfield="true" />
+      <field displayname="Email primary" name="msdyn_emailprimary" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Facebook id" name="msdyn_facebookid" type="string" customfield="true" />
+      <field displayname="First name" name="msdyn_givenname" type="string" customfield="true" />
+      <field displayname="Gender" name="msdyn_gender" type="optionsetvalue" customfield="true" />
+      <field displayname="Home phone" name="msdyn_homephone" type="string" customfield="true" />
+      <field displayname="Is open to new job" name="msdyn_isopentonewjob" type="bool" customfield="true" />
+      <field displayname="Is synced with Linkedin" name="msdyn_issyncedwithlinkedin" type="bool" customfield="true" />
+      <field displayname="Is willing to relocate" name="msdyn_iswillingtorelocate" type="bool" customfield="true" />
+      <field displayname="Last name" name="msdyn_surname" type="string" customfield="true" />
+      <field displayname="LinkedIn API URL" name="msdyn_linkedinapiurl" type="string" customfield="true" />
+      <field displayname="LinkedIn Profile" name="msdyn_linkedinprofile" type="string" customfield="true" />
+      <field displayname="LinkedIn reference" name="msdyn_linkedinid" type="string" customfield="true" />
+      <field displayname="Middle name" name="msdyn_middlename" type="string" customfield="true" />
+      <field displayname="Mobile phone" name="msdyn_mobilephone" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Twitter id" name="msdyn_twitterid" type="string" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Work phone" name="msdyn_workphone" type="string" customfield="true" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_candidateartifact" displayname="Candidate artifact" etc="10038" primaryidfield="msdyn_candidateartifactid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Artifact link" name="msdyn_artifactlink" type="string" customfield="true" />
+      <field displayname="Artifact name" name="msdyn_artifactname" type="string" customfield="true" />
+      <field displayname="Artifact purpose" name="msdyn_artifactpurpose" type="optionsetvalue" customfield="true" />
+      <field displayname="Artifact type" name="msdyn_artifacttype" type="optionsetvalue" customfield="true" />
+      <field displayname="Blob reference" name="msdyn_blobreference" type="string" customfield="true" />
+      <field displayname="Candidate" name="msdyn_candidateid" type="entityreference" lookupType="msdyn_candidate" customfield="true" />
+      <field displayname="Candidate artifact" name="msdyn_candidateartifactid" type="guid" primaryKey="true" />
+      <field displayname="Candidate artifact number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Content type" name="msdyn_contenttype" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Job application" name="msdyn_jobapplicationid" type="entityreference" lookupType="msdyn_jobapplication" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Size" name="msdyn_size" type="number" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_candidateeducation" displayname="Candidate education" etc="10039" primaryidfield="msdyn_candidateeducationid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Activities and societies" name="msdyn_activitiessocieties" type="string" customfield="true" />
+      <field displayname="Candidate" name="msdyn_candidateid" type="entityreference" lookupType="msdyn_candidate" customfield="true" />
+      <field displayname="Candidate education" name="msdyn_candidateeducationid" type="guid" primaryKey="true" />
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Degree" name="msdyn_degree" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Field of study" name="msdyn_fieldofstudy" type="string" customfield="true" />
+      <field displayname="From" name="msdyn_frommonthyear" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Grade" name="msdyn_grade" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="School" name="msdyn_school" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="To" name="msdyn_tomonthyear" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_candidateskill" displayname="Candidate skill" etc="10040" primaryidfield="msdyn_candidateskillid" primarynamefield="msdyn_skill" disableplugins="true">
+    <fields>
+      <field displayname="Candidate" name="msdyn_candidateid" type="entityreference" lookupType="msdyn_candidate" customfield="true" />
+      <field displayname="Candidate skill" name="msdyn_candidateskillid" type="guid" primaryKey="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Skill" name="msdyn_skill" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_candidatesocialnetwork" displayname="Candidate social network" etc="10137" primaryidfield="msdyn_candidatesocialnetworkid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Candidate" name="msdyn_candidateid" type="entityreference" lookupType="msdyn_candidate" customfield="true" />
+      <field displayname="CandidateSocialNetwork" name="msdyn_candidatesocialnetworkid" type="guid" primaryKey="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Member reference" name="msdyn_memberreference" type="string" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Social network" name="msdyn_socialnetwork" type="optionsetvalue" customfield="true" />
+      <field displayname="Social network identity" name="msdyn_socialnetworkidentity" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_candidatesocialnetworkconversation" displayname="Candidate social network conversation" etc="10138" primaryidfield="msdyn_candidatesocialnetworkconversationid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Author member reference" name="msdyn_authormemberreference" type="string" customfield="true" />
+      <field displayname="Candidate social network" name="msdyn_candidatesocialnetworkid" type="entityreference" lookupType="msdyn_candidatesocialnetwork" customfield="true" />
+      <field displayname="Candidate social network conversation" name="msdyn_candidatesocialnetworkconversationid" type="guid" primaryKey="true" />
+      <field displayname="Content" name="msdyn_content" type="string" customfield="true" />
+      <field displayname="Content type" name="msdyn_contenttype" type="optionsetvalue" customfield="true" />
+      <field displayname="Conversation creation date" name="msdyn_conversationcreationdate" type="datetime" customfield="true" />
+      <field displayname="Conversation modified date" name="msdyn_conversationmodifieddate" type="datetime" customfield="true" />
+      <field displayname="Conversation reference" name="msdyn_conversationreference" type="string" customfield="true" />
+      <field displayname="Conversation thread reference" name="msdyn_conversationthreadreference" type="string" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Is active" name="msdyn_isactive" type="bool" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Recipient member reference" name="msdyn_recipientmemberreference" type="string" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Social network" name="msdyn_socialnetwork" type="optionsetvalue" customfield="true" />
+      <field displayname="Social network contract reference" name="msdyn_socialnetworkcontractreference" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_candidatetracking" displayname="Candidate tracking" etc="10041" primaryidfield="msdyn_candidatetrackingid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Candidate" name="msdyn_candidateid" type="entityreference" lookupType="msdyn_candidate" customfield="true" />
+      <field displayname="Candidate tracking" name="msdyn_candidatetrackingid" type="guid" primaryKey="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Tracking category" name="msdyn_trackingcategory" type="optionsetvalue" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdm_job" displayname="Job" etc="10018" primaryidfield="cdm_jobid" primarynamefield="cdm_name" disableplugins="true">
+    <fields>
+      <field displayname="Allow Unlimited Positions" name="cdm_allowunlimitedpositions" type="bool" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Default Full Time Equivalent" name="cdm_defaultfulltimeequivalent" type="decimal" customfield="true" />
+      <field displayname="Description" name="cdm_description" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Job" name="cdm_jobid" type="guid" primaryKey="true" />
+      <field displayname="Job Description" name="cdm_jobdescription" type="string" customfield="true" />
+      <field displayname="Job Function" name="cdm_jobfunctionid" type="entityreference" lookupType="cdm_jobfunction" customfield="true" />
+      <field displayname="Job Type" name="cdm_jobtypeid" type="entityreference" lookupType="cdm_jobtype" customfield="true" />
+      <field displayname="Maximum Number of Positions" name="cdm_maximumnumberofpositions" type="number" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="cdm_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Title" name="cdm_title" type="optionsetvalue" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Valid From" name="cdm_validfrom" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Valid To" name="cdm_validto" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplication" displayname="Job application" etc="10043" primaryidfield="msdyn_jobapplicationid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Application date" name="msdyn_applicationdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Candidate" name="msdyn_candidateid" type="entityreference" lookupType="msdyn_candidate" customfield="true" />
+      <field displayname="Comment" name="msdyn_comment" type="string" customfield="true" />
+      <field displayname="Current job opening stage" name="msdyn_currentjobopeningstageid" type="entityreference" lookupType="msdyn_jobopeningstage" customfield="true" />
+      <field displayname="Current stage status" name="msdyn_currentstagestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Current stage status reason" name="msdyn_currentstagestatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="External status" name="msdyn_externalstatus" type="string" customfield="true" />
+      <field displayname="Invitation reference" name="msdyn_invitationid" type="string" customfield="true" />
+      <field displayname="Is prospect" name="msdyn_isprospect" type="bool" customfield="true" />
+      <field displayname="Is stage history synced with LinkedIn" name="msdyn_isstagehistorysyncedwithlinkedin" type="bool" customfield="true" />
+      <field displayname="Is synced with Linkedin" name="msdyn_issyncedwithlinkedin" type="bool" customfield="true" />
+      <field displayname="Job application" name="msdyn_jobapplicationid" type="guid" primaryKey="true" />
+      <field displayname="Job application number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Job application status" name="msdyn_jobapplicationstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Job application status reason" name="msdyn_jobapplicationstatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Job opening" name="msdyn_jobopeningid" type="entityreference" lookupType="msdyn_jobopening" customfield="true" />
+      <field displayname="Job Position" name="msdyn_jobpositionid" type="entityreference" lookupType="cdm_jobposition" customfield="true" />
+      <field displayname="Offer accept date" name="msdyn_offeracceptdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationactivity" displayname="Job application activity" etc="10044" primaryidfield="msdyn_jobapplicationactivityid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Activity required for" name="msdyn_required" type="optionsetvalue" customfield="true" />
+      <field displayname="Activity type" name="msdyn_activitytype" type="optionsetvalue" customfield="true" />
+      <field displayname="Actual end" name="msdyn_actualend" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Actual start" name="msdyn_actualstart" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Comment" name="msdyn_comment" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Due date" name="msdyn_duedate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Is visable to candidate" name="msdyn_isenabledforcandidate" type="bool" customfield="true" />
+      <field displayname="Job application" name="msdyn_jobapplicationid" type="entityreference" lookupType="msdyn_jobapplication" customfield="true" />
+      <field displayname="Job application activity" name="msdyn_jobapplicationactivityid" type="guid" primaryKey="true" />
+      <field displayname="Job application activity number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Job application activity status" name="msdyn_jobapplicationactivitystatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Job application activity status reason" name="msdyn_jobapplicationactivitystatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Job opening stage activity" name="msdyn_jobopeningstageactivityid" type="entityreference" lookupType="msdyn_jobopeningstageactivity" customfield="true" />
+      <field displayname="Location" name="msdyn_location" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Planned end" name="msdyn_plannedend" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Planned start" name="msdyn_plannedstart" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Schedule event reference" name="msdyn_scheduleeventreference" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationactivityassessment" displayname="Job application activity assessment" etc="10045" primaryidfield="msdyn_jobapplicationactivityassessmentid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Assessment report package" name="msdyn_assessmentreportpackageid" type="entityreference" lookupType="msdyn_assessmentreportpackage" customfield="true" />
+      <field displayname="Job application activity assessment" name="msdyn_jobapplicationactivityassessmentid" type="guid" primaryKey="true" />
+      <field displayname="Job application activity participant" name="msdyn_jobapplicationactivityparticipaid" type="entityreference" lookupType="msdyn_jobapplicationactivityparticipant" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationactivityavailability" displayname="Job application activity availability" etc="10046" primaryidfield="msdyn_jobapplicationactivityavailabilityid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Building Address" name="msdyn_buildingaddress" type="string" customfield="true" />
+      <field displayname="Building Name" name="msdyn_buildingname" type="string" customfield="true" />
+      <field displayname="Building Response Status" name="msdyn_buildingresponsestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Calendar Event Id" name="msdyn_calendareventid" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="End" name="msdyn_end" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Final Schedule Status" name="msdyn_finalschedulestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Interviewer Response Status" name="msdyn_interviewerresponsestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Is candidate available" name="msdyn_iscandidateavailable" type="bool" customfield="true" />
+      <field displayname="Is hiring team available" name="msdyn_ishiringteamavailable" type="bool" customfield="true" />
+      <field displayname="Is interview schedule shared" name="msdyn_isinterviewscheduleshared" type="bool" customfield="true" />
+      <field displayname="Is Interview Title Shared" name="msdyn_isinterviewtitleshared" type="bool" customfield="true" />
+      <field displayname="Is Interviewer Name Shared" name="msdyn_isinterviewernameshared" type="bool" customfield="true" />
+      <field displayname="Is Private Meeting" name="msdyn_isprivatemeeting" type="bool" customfield="true" />
+      <field displayname="Is Schedule Dirty" name="msdyn_isdirty" type="bool" customfield="true" />
+      <field displayname="Is Tentative" name="msdyn_istentative" type="bool" customfield="true" />
+      <field displayname="Job application activity" name="msdyn_jobapplicationactivityid" type="entityreference" lookupType="msdyn_jobapplicationactivity" customfield="true" />
+      <field displayname="Job application activity availability" name="msdyn_jobapplicationactivityavailabilityid" type="guid" primaryKey="true" />
+      <field displayname="Job application activity availibility" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Job application activity participant" name="msdyn_jobapplicationactivityparticipaid" type="entityreference" lookupType="msdyn_jobapplicationactivityparticipant" customfield="true" />
+      <field displayname="Location" name="msdyn_location" type="string" customfield="true" />
+      <field displayname="Meeting Detail Id" name="msdyn_meetingdetailid" type="string" customfield="true" />
+      <field displayname="Meeting Info Id" name="msdyn_meetinginfoid" type="string" customfield="true" />
+      <field displayname="Offset" name="msdyn_offset" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Response comment" name="msdyn_responsecomment" type="string" customfield="true" />
+      <field displayname="Response Datetime" name="msdyn_responsedatetime" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Room Address" name="msdyn_roomaddress" type="string" customfield="true" />
+      <field displayname="Room Name" name="msdyn_roomname" type="string" customfield="true" />
+      <field displayname="Room Response Status" name="msdyn_roomresponsestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Schedule Order" name="msdyn_scheduleorder" type="number" customfield="true" />
+      <field displayname="Schedule Requester" name="msdyn_schedulerequester" type="entityreference" lookupType="cdm_worker" customfield="true" />
+      <field displayname="Schedule Subject" name="msdyn_subject" type="string" customfield="true" />
+      <field displayname="Schedule Timezone Abbreviation" name="msdyn_scheduletimezoneabbreviation" type="string" customfield="true" />
+      <field displayname="Schedule Timezone Name" name="msdyn_scheduletimezonename" type="string" customfield="true" />
+      <field displayname="Schedule UTC Offset" name="msdyn_scheduleutcoffset" type="number" customfield="true" />
+      <field displayname="Schedule UTC Offset In Hours" name="msdyn_scheduleutcoffsetinhours" type="string" customfield="true" />
+      <field displayname="Scheduler Account Email" name="msdyn_scheduleraccountemail" type="string" customfield="true" />
+      <field displayname="Skype Html View Href" name="msdyn_skypehtmlviewhref" type="string" customfield="true" />
+      <field displayname="Skype Join Url" name="msdyn_skypejoinurl" type="string" customfield="true" />
+      <field displayname="Skype Meeting Type" name="msdyn_skypemeetingtype" type="optionsetvalue" customfield="true" />
+      <field displayname="Skype Online Meeting Id" name="msdyn_skypeonlinemeetingid" type="string" customfield="true" />
+      <field displayname="Skype Online Meeting Required" name="msdyn_skypeonlinemeetingrequired" type="bool" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Start" name="msdyn_start" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Time zone" name="msdyn_timezone" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Unknown Free Busy Time" name="msdyn_unknownfreebusytime" type="bool" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationactivityparticipant" displayname="Job application activity participant" etc="10047" primaryidfield="msdyn_jobapplicationactivityparticipantid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Feedback status" name="msdyn_feedbackstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Feedback status reason" name="msdyn_feedbackstatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Is recommended to continue" name="msdyn_isrecommendedtocontinue" type="bool" customfield="true" />
+      <field displayname="Is synced with LinkedIn" name="msdyn_issyncedwithlinkedin" type="bool" customfield="true" />
+      <field displayname="Job application activity" name="msdyn_jobapplicationactivityid" type="entityreference" lookupType="msdyn_jobapplicationactivity" customfield="true" />
+      <field displayname="Job application activity participant" name="msdyn_jobapplicationactivityparticipantid" type="guid" primaryKey="true" />
+      <field displayname="Job opening participant" name="msdyn_jobopeningparticipantid" type="entityreference" lookupType="msdyn_jobopeningparticipant" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal" name="msdyn_ordinal" type="number" customfield="true" />
+      <field displayname="Overall comment" name="msdyn_overallcomment" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Strength comment" name="msdyn_strengthcomment" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Weakness comment" name="msdyn_weaknesscomment" type="string" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationactivityparticipantmeet" displayname="Job application activity participant meeting" etc="10139" primaryidfield="msdyn_jobapplicationactivityparticipantmeetid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Building Address" name="msdyn_buildingaddress" type="string" customfield="true" />
+      <field displayname="Building Name" name="msdyn_buildingname" type="string" customfield="true" />
+      <field displayname="Building Response Status" name="msdyn_buildingresponsestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Calendar Event Id" name="msdyn_calendareventid" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="End" name="msdyn_end" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Final Schedule Status" name="msdyn_finalschedulestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Interviewer Response Status" name="msdyn_interviewerresponsestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Is candidate available" name="msdyn_iscandidateavailable" type="bool" customfield="true" />
+      <field displayname="Is hiring team available" name="msdyn_ishiringteamavailable" type="bool" customfield="true" />
+      <field displayname="Is interview schedule shared" name="msdyn_isinterviewscheduleshared" type="bool" customfield="true" />
+      <field displayname="Is Interview Title Shared" name="msdyn_isinterviewtitleshared" type="bool" customfield="true" />
+      <field displayname="Is Interviewer Name Shared" name="msdyn_isinterviewernameshared" type="bool" customfield="true" />
+      <field displayname="Is Private Meeting" name="msdyn_isprivatemeeting" type="bool" customfield="true" />
+      <field displayname="Is Schedule Dirty" name="msdyn_isscheduledirty" type="bool" customfield="true" />
+      <field displayname="Is Tentative" name="msdyn_istentative" type="bool" customfield="true" />
+      <field displayname="Job application activity participant" name="msdyn_jobapplicationactivityparticipaid" type="entityreference" lookupType="msdyn_jobapplicationactivityparticipant" customfield="true" />
+      <field displayname="Job application activity participant meeting" name="msdyn_jobapplicationactivityparticipantmeetid" type="guid" primaryKey="true" />
+      <field displayname="Job application activity participant meeting number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Location" name="msdyn_location" type="string" customfield="true" />
+      <field displayname="Meeting Detail Id" name="msdyn_meetingdetailid" type="string" customfield="true" />
+      <field displayname="Meeting Info Id" name="msdyn_meetinginfoid" type="string" customfield="true" />
+      <field displayname="Offset" name="msdyn_offset" type="string" customfield="true" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Response comment" name="msdyn_responsecomment" type="string" customfield="true" />
+      <field displayname="Response Datetime" name="msdyn_responsedatetime" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Room Address" name="msdyn_roomaddress" type="string" customfield="true" />
+      <field displayname="Room Name" name="msdyn_roomname" type="string" customfield="true" />
+      <field displayname="Room Response Status" name="msdyn_roomresponsestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Schedule Order" name="msdyn_scheduleorder" type="number" customfield="true" />
+      <field displayname="Schedule Requester" name="msdyn_schedulerequesterid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+      <field displayname="Schedule Subject" name="msdyn_schedulesubject" type="string" customfield="true" />
+      <field displayname="Schedule Timezone Abbreviation" name="msdyn_scheduletimezoneabbreviation" type="string" customfield="true" />
+      <field displayname="Schedule Timezone Name" name="msdyn_scheduletimezonename" type="string" customfield="true" />
+      <field displayname="Schedule UTC Offset" name="msdyn_scheduleutcoffset" type="number" customfield="true" />
+      <field displayname="Schedule UTC Offset In Hours" name="msdyn_scheduleutcoffsetinhours" type="string" customfield="true" />
+      <field displayname="Scheduler Account Email" name="msdyn_scheduleraccountemail" type="string" customfield="true" />
+      <field displayname="Skype Html View Href" name="msdyn_skypehtmlviewhref" type="string" customfield="true" />
+      <field displayname="Skype Join Url" name="msdyn_skypejoinurl" type="string" customfield="true" />
+      <field displayname="Skype Meeting Type" name="msdyn_skypemeetingtype" type="optionsetvalue" customfield="true" />
+      <field displayname="Skype Online Meeting Id" name="msdyn_skypeonlinemeetingid" type="string" customfield="true" />
+      <field displayname="Skype Online Meeting Required" name="msdyn_skypeonlinemeetingrequired" type="bool" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Start" name="msdyn_start" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time zone" name="msdyn_timezone" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Unknown Free Busy Time" name="msdyn_unknownfreebusytime" type="bool" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationcomment" displayname="Job application note" etc="10048" primaryidfield="msdyn_jobapplicationcommentid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Is synced with Linkedin" name="msdyn_issyncedwithlinkedin" type="bool" customfield="true" />
+      <field displayname="Job application" name="msdyn_jobapplicationid" type="entityreference" lookupType="msdyn_jobapplication" customfield="true" />
+      <field displayname="Job application comment" name="msdyn_jobapplicationcommentid" type="guid" primaryKey="true" />
+      <field displayname="Job opening participant" name="msdyn_jobopeningparticipantid" type="entityreference" lookupType="msdyn_jobopeningparticipant" customfield="true" />
+      <field displayname="Note" name="msdyn_comment" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationstagehistory" displayname="Job application stage history" etc="10050" primaryidfield="msdyn_jobapplicationstagehistoryid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="CDS Status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="CDS Status reason" name="msdyn_statusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Job application" name="msdyn_jobapplicationid" type="entityreference" lookupType="msdyn_jobapplication" customfield="true" />
+      <field displayname="Job application stage history" name="msdyn_jobapplicationstagehistoryid" type="guid" primaryKey="true" />
+      <field displayname="Job opening stage" name="msdyn_jobopeningstageid" type="entityreference" lookupType="msdyn_jobopeningstage" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Stage transition date time" name="msdyn_transitiondatetime" type="datetime" customfield="true" />
+      <field displayname="Stage transition date time valid to" name="msdyn_transitiondatetimevalidto" type="datetime" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobapplicationhistory" displayname="Job application status history" etc="10049" primaryidfield="msdyn_jobapplicationhistoryid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job application" name="msdyn_jobapplicationid" type="entityreference" lookupType="msdyn_jobapplication" customfield="true" />
+      <field displayname="Job application history" name="msdyn_jobapplicationhistoryid" type="guid" primaryKey="true" />
+      <field displayname="Job application status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Job application status reason" name="msdyn_statusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Transition date/time" name="msdyn_transitiondatetime" type="datetime" customfield="true" />
+      <field displayname="Transition date/time valid to" name="msdyn_transitiondatetimevalidto" type="datetime" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdm_jobfunction" displayname="Job Function" etc="10019" primaryidfield="cdm_jobfunctionid" primarynamefield="cdm_name" disableplugins="true">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="cdm_description" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Job Function" name="cdm_jobfunctionid" type="guid" primaryKey="true" />
+      <field displayname="Job Function Name" name="cdm_name" type="string" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobindustry" displayname="Job industry" etc="10051" primaryidfield="msdyn_jobindustryid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Industry" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Job industry" name="msdyn_jobindustryid" type="guid" primaryKey="true" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffer" displayname="Job offer" etc="10052" primaryidfield="msdyn_jobofferid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Candidate comment" name="msdyn_candidatecomment" type="string" customfield="true" />
+      <field displayname="Candidate document upload date" name="msdyn_candidatedocumentuploaddate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Candidate response date" name="msdyn_candidateresponsedate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Close offer comment" name="msdyn_closeoffercomment" type="string" customfield="true" />
+      <field displayname="Decline comment" name="msdyn_declinecomment" type="string" customfield="true" />
+      <field displayname="Decline reasons" name="msdyn_declinereasons" type="optionsetvaluecollection" customfield="true" />
+      <field displayname="Is expiry extended" name="msdyn_isexpiryextended" type="bool" customfield="true" />
+      <field displayname="Is locked" name="msdyn_islocked" type="bool" customfield="true" />
+      <field displayname="Is non standard offer" name="msdyn_isnonstandardoffer" type="bool" customfield="true" />
+      <field displayname="Is ok to contact candidate after decline" name="msdyn_isoktocontactcandidateafterdecline" type="bool" customfield="true" />
+      <field displayname="Is sent to candidate" name="msdyn_issenttocandidate" type="bool" customfield="true" />
+      <field displayname="Is sequential approval required" name="msdyn_issequentialapprovalrequired" type="bool" customfield="true" />
+      <field displayname="Is signed document required" name="msdyn_issigneddocumentrequired" type="bool" customfield="true" />
+      <field displayname="Job application" name="msdyn_jobapplication" type="entityreference" lookupType="msdyn_jobapplication" customfield="true" />
+      <field displayname="Job application activity" name="msdyn_jobapplicationactivity" type="entityreference" lookupType="msdyn_jobapplicationactivity" customfield="true" />
+      <field displayname="Job offer" name="msdyn_jobofferid" type="guid" primaryKey="true" />
+      <field displayname="Job offer" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Job offer status" name="msdyn_jobofferstatusid" type="entityreference" lookupType="msdyn_jobofferstatus" customfield="true" />
+      <field displayname="Job offer template id" name="msdyn_joboffertemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Job offer template package id" name="msdyn_joboffertemplatepackageid" type="entityreference" lookupType="msdyn_joboffertemplatepackage" customfield="true" />
+      <field displayname="Next version" name="msdyn_nextversion" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Non standard offer notes" name="msdyn_nonstandardoffernotes" type="string" customfield="true" />
+      <field displayname="Non standard offer reason" name="msdyn_nonstandardofferreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Offer accept date" name="msdyn_offeracceptdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Offer close date" name="msdyn_offerclosedate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Offer expiration date" name="msdyn_offerexpirationdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Offer locale" name="msdyn_offerlocale" type="string" customfield="true" />
+      <field displayname="Offer publish date" name="msdyn_offerpublishdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Offer withdraw date" name="msdyn_offerwithdrawdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Owner comment" name="msdyn_ownercomment" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Previous version" name="msdyn_previousversion" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Required candidate documents" name="msdyn_requiredcandidatedocuments" type="string" customfield="true" />
+      <field displayname="Status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Status reason" name="msdyn_statusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Status reason before close" name="msdyn_statusreasonbeforeclose" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Valid from" name="msdyn_validfrom" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Valid to" name="msdyn_validto" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Version no" name="msdyn_versionno" type="number" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Withdraw candidate notification" name="msdyn_withdrawcandidatenotification" type="bool" customfield="true" />
+      <field displayname="Withdraw candidate notification body" name="msdyn_withdrawcandidatenotificationbody" type="string" customfield="true" />
+      <field displayname="Withdraw candidate notification subject" name="msdyn_withdrawcandidatenotificationsubject" type="string" customfield="true" />
+      <field displayname="Withdraw comment" name="msdyn_withdrawcomment" type="string" customfield="true" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_joboffer_joboffertokenvalue" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_joboffer_joboffertokenvalue" m2mTargetEntity="msdyn_joboffertokenvalue" m2mTargetEntityPrimaryKey="msdyn_joboffertokenvalueid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_jobofferapproval" displayname="Job offer approval" etc="10053" primaryidfield="msdyn_jobofferapprovalid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Comment" name="msdyn_comment" type="string" customfield="true" />
+      <field displayname="Is submitted" name="msdyn_issubmitted" type="bool" customfield="true" />
+      <field displayname="Job offer approval" name="msdyn_jobofferapprovalid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="RequestDate" name="msdyn_requestdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Respond date" name="msdyn_responddate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Status reason" name="msdyn_statusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Submitted by" name="msdyn_submittedby" type="entityreference" lookupType="cdm_worker" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferapprovalemail" displayname="Job offer approval email" etc="10054" primaryidfield="msdyn_jobofferapprovalemailid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Email content" name="msdyn_emailcontent" type="string" customfield="true" />
+      <field displayname="Email subject" name="msdyn_emailsubject" type="string" customfield="true" />
+      <field displayname="job offer" name="msdyn_jobofferid" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Job offer approval email" name="msdyn_jobofferapprovalemailid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferartifact" displayname="Job offer artifact" etc="10055" primaryidfield="msdyn_jobofferartifactid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Artifact type" name="msdyn_artifacttype" type="optionsetvalue" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Document type" name="msdyn_documenttype" type="optionsetvalue" customfield="true" />
+      <field displayname="File label" name="msdyn_filelabel" type="string" customfield="true" />
+      <field displayname="Internal resource uri" name="msdyn_internalresourceuri" type="string" customfield="true" />
+      <field displayname="Job offer" name="msdyn_jobofferid" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Job offer artifact" name="msdyn_jobofferartifactid" type="guid" primaryKey="true" />
+      <field displayname="jobofferpackagedocument" name="msdyn_jobofferpackagedocumentid" type="entityreference" lookupType="msdyn_jobofferpackagedocument" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Uploaded by" name="msdyn_uploadedby" type="optionsetvalue" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferesignature" displayname="Job offer ESignature" etc="10167" primaryidfield="msdyn_jobofferesignatureid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="esignature type" name="msdyn_esignaturetype" type="optionsetvalue" customfield="true" />
+      <field displayname="External document reference" name="msdyn_externaldocumentreference" type="string" customfield="true" />
+      <field displayname="Job offer ESignature" name="msdyn_jobofferesignatureid" type="guid" primaryKey="true" />
+      <field displayname="Job offer id" name="msdyn_jobofferid" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Recruiter user id" name="msdyn_recruiteruserid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+      <field displayname="Signing candidate name" name="msdyn_signingcandidatename" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferpackagedocument" displayname="Job offer package document" etc="10140" primaryidfield="msdyn_jobofferpackagedocumentid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Candidate signature date" name="msdyn_candidatesignaturedate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Is candidate signature required" name="msdyn_iscandidatesignaturerequired" type="bool" customfield="true" />
+      <field displayname="Is deleted" name="msdyn_isdeleted" type="bool" customfield="true" />
+      <field displayname="Is offer text editable" name="msdyn_isoffertexteditable" type="bool" customfield="true" />
+      <field displayname="Is required" name="msdyn_isrequired" type="bool" customfield="true" />
+      <field displayname="Is signed by candidate" name="msdyn_issignedbycandidate" type="bool" customfield="true" />
+      <field displayname="Job offer" name="msdyn_jobofferid" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Job offer package document" name="msdyn_jobofferpackagedocumentid" type="guid" primaryKey="true" />
+      <field displayname="Job offer template" name="msdyn_joboffertemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal" name="msdyn_ordinal" type="number" customfield="true" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_jobofferpackagedocument_joboffertoken" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_jobofferpackagedocument_joboffertoken" m2mTargetEntity="msdyn_joboffertoken" m2mTargetEntityPrimaryKey="msdyn_joboffertokenid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_jobofferparticipant" displayname="Job offer participant" etc="10056" primaryidfield="msdyn_jobofferparticipantid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Approval" name="msdyn_approval" type="entityreference" lookupType="msdyn_jobofferapproval" customfield="true" />
+      <field displayname="Job application activity participant" name="msdyn_jobapplicationactivityparticipaid" type="entityreference" lookupType="msdyn_jobapplicationactivityparticipant" customfield="true" />
+      <field displayname="Job offer" name="msdyn_jobofferid" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Job offer participant" name="msdyn_jobofferparticipantid" type="guid" primaryKey="true" />
+      <field displayname="Job offer participant ordinal" name="msdyn_jobofferparticipantordinal" type="number" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Role" name="msdyn_role" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferruleset" displayname="Job offer ruleset" etc="10141" primaryidfield="msdyn_jobofferrulesetid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer rule set id" name="msdyn_jobofferrulesetid" type="guid" primaryKey="true" />
+      <field displayname="Job offer token" name="msdyn_tokenid" type="entityreference" lookupType="msdyn_joboffertoken" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferrulesetartifact" displayname="Job offer ruleset artifact" etc="10142" primaryidfield="msdyn_jobofferrulesetartifactid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer ruleset artifact" name="msdyn_jobofferrulesetartifactid" type="guid" primaryKey="true" />
+      <field displayname="Job offer ruleset version" name="msdyn_jobofferrulesetversionid" type="entityreference" lookupType="msdyn_jobofferrulesetversion" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferrulesetattribute" displayname="Job offer ruleset attribute" etc="10143" primaryidfield="msdyn_jobofferrulesetattributeid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer ruleset" name="msdyn_jobofferrulesetid" type="entityreference" lookupType="msdyn_jobofferruleset" customfield="true" />
+      <field displayname="Job offer ruleset attribute" name="msdyn_jobofferrulesetattributeid" type="guid" primaryKey="true" />
+      <field displayname="Job offer token" name="msdyn_tokenid" type="entityreference" lookupType="msdyn_joboffertoken" customfield="true" />
+      <field displayname="Level" name="msdyn_level" type="number" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferrulesetattributedata" displayname="Job offer ruleset attribute data" etc="10144" primaryidfield="msdyn_jobofferrulesetattributedataid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer rule set attribute data" name="msdyn_jobofferrulesetattributedataid" type="guid" primaryKey="true" />
+      <field displayname="Job offer ruleset" name="msdyn_jobofferrulesetid" type="entityreference" lookupType="msdyn_jobofferruleset" customfield="true" />
+      <field displayname="Job offer ruleset version" name="msdyn_jobofferrulesetversionid" type="entityreference" lookupType="msdyn_jobofferrulesetversion" customfield="true" />
+      <field displayname="Job offer token" name="msdyn_tokenid" type="entityreference" lookupType="msdyn_joboffertoken" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Parent attribute data" name="msdyn_parentattributedataid" type="entityreference" lookupType="msdyn_jobofferrulesetattributedata" customfield="true" />
+      <field displayname="Token value" name="msdyn_tokenvalue" type="string" customfield="true" />
+      <field displayname="TokenValuePath" name="msdyn_tokenvaluepath" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferrulesetversion" displayname="Job offer ruleset version" etc="10145" primaryidfield="msdyn_jobofferrulesetversionid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Error file uri" name="msdyn_errorfileuri" type="string" customfield="true" />
+      <field displayname="Is live" name="msdyn_islive" type="bool" customfield="true" />
+      <field displayname="Job offer rule set version" name="msdyn_jobofferrulesetversionid" type="guid" primaryKey="true" />
+      <field displayname="Job offer ruleset" name="msdyn_jobofferrulesetid" type="entityreference" lookupType="msdyn_jobofferruleset" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Processing status" name="msdyn_processingstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Ruleset file uri" name="msdyn_rulesetfileuri" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffersection" displayname="Job offer section" etc="10057" primaryidfield="msdyn_joboffersectionid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer" name="msdyn_jobofferid" type="entityreference" lookupType="msdyn_joboffer" customfield="true" />
+      <field displayname="Job offer section" name="msdyn_joboffersectionid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal number" name="msdyn_ordinalnumber" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Section color" name="msdyn_sectioncolor" type="string" customfield="true" />
+      <field displayname="Section name" name="msdyn_sectionname" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobofferstatus" displayname="Job offer status" etc="10058" primaryidfield="msdyn_jobofferstatusid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer status" name="msdyn_jobofferstatusid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Status reason" name="msdyn_statusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffertemplate" displayname="Job offer template" etc="10059" primaryidfield="msdyn_joboffertemplateid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Access level" name="msdyn_accesslevel" type="optionsetvalue" customfield="true" />
+      <field displayname="Activated date" name="msdyn_activateddate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Is offer text editable" name="msdyn_isoffertexteditable" type="bool" customfield="true" />
+      <field displayname="Job offer template" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Job offer template" name="msdyn_joboffertemplateid" type="guid" primaryKey="true" />
+      <field displayname="Job offer template status" name="msdyn_joboffertemplatestatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Job offer template status reason" name="msdyn_joboffertemplatestatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Next template id" name="msdyn_nexttemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Original template id" name="msdyn_originaltemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Previous template id" name="msdyn_previoustemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="TemplateUri" name="msdyn_templateuri" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Valid from" name="msdyn_validfrom" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Valid to" name="msdyn_validto" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_joboffertemplate_joboffertoken" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_joboffertemplate_joboffertoken" m2mTargetEntity="msdyn_joboffertoken" m2mTargetEntityPrimaryKey="msdyn_joboffertokenid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_joboffertemplatepackage" displayname="Job offer template package" etc="10060" primaryidfield="msdyn_joboffertemplatepackageid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Job offer template package" name="msdyn_joboffertemplatepackageid" type="guid" primaryKey="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Next template package id" name="msdyn_nexttemplatepackageid" type="entityreference" lookupType="msdyn_joboffertemplatepackage" customfield="true" />
+      <field displayname="Original template package id" name="msdyn_originaltemplatepackageid" type="entityreference" lookupType="msdyn_joboffertemplatepackage" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Previous template package id" name="msdyn_previoustemplatepackageid" type="entityreference" lookupType="msdyn_joboffertemplatepackage" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Status reason" name="msdyn_statusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Valid from" name="msdyn_validfrom" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Valid to" name="msdyn_validto" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffertemplatepackagedetail" displayname="Job offer template package detail" etc="10146" primaryidfield="msdyn_joboffertemplatepackagedetailid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Is template required" name="msdyn_istemplaterequired" type="bool" customfield="true" />
+      <field displayname="Job offer template id" name="msdyn_joboffertemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Job offer template package" name="msdyn_joboffertemplatepackageid" type="entityreference" lookupType="msdyn_joboffertemplatepackage" customfield="true" />
+      <field displayname="Job offer template package detail" name="msdyn_joboffertemplatepackagedetailid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal" name="msdyn_ordinal" type="number" customfield="true" />
+      <field displayname="Original template id" name="msdyn_originaltemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Original template package id" name="msdyn_originaltemplatepackageid" type="entityreference" lookupType="msdyn_joboffertemplatepackage" customfield="true" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffertemplateparticipant" displayname="Job offer template participant" etc="10062" primaryidfield="msdyn_joboffertemplateparticipantid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer template" name="msdyn_joboffertemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Job offer template participant" name="msdyn_joboffertemplateparticipantid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Role" name="msdyn_role" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffertemplatesection" displayname="Job offer template section" etc="10063" primaryidfield="msdyn_joboffertemplatesectionid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job offer template" name="msdyn_joboffertemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Job offer template section" name="msdyn_joboffertemplatesectionid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal number" name="msdyn_ordinalnumber" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Section color" name="msdyn_sectioncolor" type="string" customfield="true" />
+      <field displayname="Section name" name="msdyn_sectionname" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffertemplatetoken" displayname="Job offer template token" etc="10064" primaryidfield="msdyn_joboffertemplatetokenid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="In use" name="msdyn_inuse" type="bool" customfield="true" />
+      <field displayname="Job offer template section" name="msdyn_joboffertemplatesectionid" type="entityreference" lookupType="msdyn_joboffertemplatesection" customfield="true" />
+      <field displayname="Job offer template token" name="msdyn_joboffertemplatetokenid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal number" name="msdyn_ordinalnumber" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Token key" name="msdyn_tokenkey" type="string" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_joboffertemplatetoken_joboffer" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_joboffertemplatetoken_joboffer" m2mTargetEntity="msdyn_joboffertoken" m2mTargetEntityPrimaryKey="msdyn_joboffertokenid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_joboffertoken" displayname="Job offer token" etc="10065" primaryidfield="msdyn_joboffertokenid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Data type" name="msdyn_datatype" type="optionsetvalue" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Job offer token" name="msdyn_joboffertokenid" type="guid" primaryKey="true" />
+      <field displayname="Min Supported Version" name="msdyn_introducedversion" type="number" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal number" name="msdyn_ordinalnumber" type="number" customfield="true" />
+      <field displayname="Originating template id" name="msdyn_originatingtemplateid" type="entityreference" lookupType="msdyn_joboffertemplate" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Section id" name="msdyn_sectionid" type="string" customfield="true" />
+      <field displayname="Section name" name="msdyn_sectionname" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Token type" name="msdyn_tokentype" type="optionsetvalue" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_joboffertokenvalue" displayname="Job offer token value" etc="10066" primaryidfield="msdyn_joboffertokenvalueid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Display text" name="msdyn_displaytext" type="string" customfield="true" />
+      <field displayname="Is explicitly selected" name="msdyn_isexplicitlyselected" type="bool" customfield="true" />
+      <field displayname="Is overridden" name="msdyn_isoverridden" type="bool" customfield="true" />
+      <field displayname="Job offer section" name="msdyn_joboffersectionid" type="entityreference" lookupType="msdyn_joboffersection" customfield="true" />
+      <field displayname="Job offer token value" name="msdyn_joboffertokenvalueid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Ordinal number" name="msdyn_ordinalnumber" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Token key" name="msdyn_tokenkey" type="string" customfield="true" />
+      <field displayname="Token value" name="msdyn_tokenvalue" type="string" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_joboffertokenvalue_joboffer" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_joboffertokenvalue_joboffer" m2mTargetEntity="msdyn_joboffertoken" m2mTargetEntityPrimaryKey="msdyn_joboffertokenid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_jobopening" displayname="Job opening" etc="10067" primaryidfield="msdyn_jobopeningid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Address city" name="msdyn_addresscity" type="string" customfield="true" />
+      <field displayname="Address country or region" name="msdyn_addresscountrycode" type="string" customfield="true" />
+      <field displayname="Address line1" name="msdyn_addressline1" type="string" customfield="true" />
+      <field displayname="Address line2" name="msdyn_addressline2" type="string" customfield="true" />
+      <field displayname="Address postal code" name="msdyn_addresspostalcode" type="string" customfield="true" />
+      <field displayname="Address state or province" name="msdyn_addressstate" type="string" customfield="true" />
+      <field displayname="Application close date" name="msdyn_applicationclosedate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Application start date" name="msdyn_applicationstartdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Apply now link" name="msdyn_applyurl" type="string" customfield="true" />
+      <field displayname="Business unit" name="msdyn_businessunitid" type="entityreference" lookupType="businessunit" customfield="true" />
+      <field displayname="Comment" name="msdyn_comment" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Employment type" name="msdyn_employmenttype" type="optionsetvalue" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Is hiring team synced with Linkedin" name="msdyn_ishiringteamsyncedwithlinkedin" type="bool" customfield="true" />
+      <field displayname="Is synced with LinkedIn" name="msdyn_issyncedwithlinkedin" type="bool" customfield="true" />
+      <field displayname="Is template" name="msdyn_istemplate" type="bool" customfield="true" />
+      <field displayname="Job activation date" name="msdyn_jobactivationdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Job end date" name="msdyn_jobenddate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Job location" name="msdyn_joblocation" type="string" customfield="true" />
+      <field displayname="Job opening" name="msdyn_jobopeningid" type="guid" primaryKey="true" />
+      <field displayname="Job opening configuration" name="msdyn_jobopeningconfiguration" type="string" customfield="true" />
+      <field displayname="Job opening number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Job opening status" name="msdyn_jobopeningstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Job opening status reason" name="msdyn_jobopeningstatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Job start date" name="msdyn_jobstartdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Job title" name="msdyn_jobtitle" type="string" customfield="true" />
+      <field displayname="Number of openings" name="msdyn_numberofopenings" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Qualification summary" name="msdyn_qualificationsummary" type="string" customfield="true" />
+      <field displayname="Responsibilities" name="msdyn_responsibilities" type="string" customfield="true" />
+      <field displayname="Seniority level" name="msdyn_senioritylevel" type="optionsetvalue" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Travel percentage" name="msdyn_travelpercentage" type="number" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_jobopening_cdm_jobfunction" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_jobopening_cdm_jobfunction" m2mTargetEntity="cdm_jobfunction" m2mTargetEntityPrimaryKey="cdm_jobfunctionid" />
+      <relationship name="msdyn_jobopening_cdm_jobposition" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_jobopening_cdm_jobposition" m2mTargetEntity="cdm_jobposition" m2mTargetEntityPrimaryKey="cdm_jobpositionid" />
+      <relationship name="msdyn_jobopening_jobindustry" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_jobopening_jobindustry" m2mTargetEntity="msdyn_jobindustry" m2mTargetEntityPrimaryKey="msdyn_jobindustryid" />
+      <relationship name="msdyn_jobopening_jobskill" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_jobopening_jobskill" m2mTargetEntity="msdyn_jobskill" m2mTargetEntityPrimaryKey="msdyn_jobskillid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_jobopeningparticipant" displayname="Job opening participant" etc="10068" primaryidfield="msdyn_jobopeningparticipantid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Can edit template" name="msdyn_canedittemplate" type="bool" customfield="true" />
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Default template tenant reference" name="msdyn_tenantobjectid" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Group Object Id" name="msdyn_groupobjectid" type="string" customfield="true" />
+      <field displayname="Is Default Template" name="msdyn_isdefaulttemplate" type="bool" customfield="true" />
+      <field displayname="Is Template Participant" name="msdyn_istemplateparticipant" type="bool" customfield="true" />
+      <field displayname="Job opening" name="msdyn_jobopeningid" type="entityreference" lookupType="msdyn_jobopening" customfield="true" />
+      <field displayname="Job opening participant" name="msdyn_jobopeningparticipantid" type="guid" primaryKey="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Role" name="msdyn_role" type="optionsetvalue" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_jobopeningparticipant_cdm_worker" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_jobopeningparticipant_cdm_worker" m2mTargetEntity="cdm_worker" m2mTargetEntityPrimaryKey="cdm_workerid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_jobopeningstage" displayname="Job opening stage" etc="10069" primaryidfield="msdyn_jobopeningstageid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Job opening" name="msdyn_jobopeningid" type="entityreference" lookupType="msdyn_jobopening" customfield="true" />
+      <field displayname="Job opening stage" name="msdyn_jobopeningstageid" type="guid" primaryKey="true" />
+      <field displayname="Ordinal" name="msdyn_ordinal" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Plugin data" name="msdyn_plugindata" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Stage name" name="msdyn_displayname" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobopeningstageactivity" displayname="Job opening stage activity" etc="10070" primaryidfield="msdyn_jobopeningstageactivityid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Activity name" name="msdyn_displaylabel" type="string" customfield="true" />
+      <field displayname="Activity required for" name="msdyn_required" type="optionsetvalue" customfield="true" />
+      <field displayname="Activity type" name="msdyn_activitytype" type="optionsetvalue" customfield="true" />
+      <field displayname="Assessment package refernce" name="msdyn_assessmentpackageid" type="string" customfield="true" />
+      <field displayname="Assessment preview url" name="msdyn_assessmentpreviewurl" type="string" customfield="true" />
+      <field displayname="Assessment provider" name="msdyn_assessmentprovider" type="optionsetvalue" customfield="true" />
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Configuration" name="msdyn_configuration" type="string" customfield="true" />
+      <field displayname="Days to complete" name="msdyn_daystocomplete" type="number" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Duration in minutes" name="msdyn_durationinminutes" type="number" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Is visible to candidate" name="msdyn_isenabledforcandidate" type="bool" customfield="true" />
+      <field displayname="Job opening stage" name="msdyn_jobopeningstageid" type="entityreference" lookupType="msdyn_jobopeningstage" customfield="true" />
+      <field displayname="Job opening stage activity" name="msdyn_jobopeningstageactivityid" type="guid" primaryKey="true" />
+      <field displayname="Number of questions" name="msdyn_numberofquestions" type="number" customfield="true" />
+      <field displayname="Ordinal" name="msdyn_ordinal" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Plugin reference" name="msdyn_url" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Sub ordinal" name="msdyn_subordinal" type="number" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdm_jobposition" displayname="Job Position" etc="10020" primaryidfield="cdm_jobpositionid" primarynamefield="cdm_jobpositionnumber" disableplugins="true">
+    <fields>
+      <field displayname="Activation" name="cdm_activation" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Available for Assignment" name="cdm_availableforassignment" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Department" name="cdm_departmentid" type="entityreference" lookupType="cdm_department" customfield="true" />
+      <field displayname="Description" name="cdm_description" type="string" customfield="true" />
+      <field displayname="Full Time Equivalent" name="cdm_fulltimeequivalent" type="decimal" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Job" name="cdm_jobid" type="entityreference" lookupType="cdm_job" customfield="true" />
+      <field displayname="Job Position" name="cdm_jobpositionid" type="guid" primaryKey="true" />
+      <field displayname="Job Position Number" name="cdm_jobpositionnumber" type="string" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Parent Job Position" name="cdm_parentjobpositionid" type="entityreference" lookupType="cdm_jobposition" customfield="true" />
+      <field displayname="Position Type" name="cdm_positiontypeid" type="entityreference" lookupType="cdm_positiontype" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Retirement" name="cdm_retirement" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Title" name="cdm_title" type="optionsetvalue" customfield="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Valid From" name="cdm_validfrom" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Valid To" name="cdm_validto" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobposting" displayname="Job posting" etc="10071" primaryidfield="msdyn_jobpostingid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Job opening" name="msdyn_jobopeningid" type="entityreference" lookupType="msdyn_jobopening" customfield="true" />
+      <field displayname="Job post URL" name="msdyn_jobposturl" type="string" customfield="true" />
+      <field displayname="Job posting" name="msdyn_jobpostingid" type="guid" primaryKey="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Posting status" name="msdyn_postingstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Posting status reason" name="msdyn_postingstatusreason" type="optionsetvalue" customfield="true" />
+      <field displayname="Posting supplier" name="msdyn_postingsupplier" type="string" customfield="true" />
+      <field displayname="Publication close date" name="msdyn_publicationclosedate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Publication start date" name="msdyn_publicationstartdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_jobskill" displayname="Job skill" etc="10072" primaryidfield="msdyn_jobskillid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Job skill" name="msdyn_jobskillid" type="guid" primaryKey="true" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Skill" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdm_jobtype" displayname="Job Type" etc="10021" primaryidfield="cdm_jobtypeid" primarynamefield="cdm_name" disableplugins="true">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="cdm_description" type="string" customfield="true" />
+      <field displayname="Exempt Status" name="cdm_exemptstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Job Type" name="cdm_jobtypeid" type="guid" primaryKey="true" />
+      <field displayname="Job Type Name" name="cdm_name" type="string" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_onboardingartifact" displayname="Onboarding artifact" etc="10073" primaryidfield="msdyn_onboardingartifactid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Artifact link" name="msdyn_artifactlink" type="string" customfield="true" />
+      <field displayname="Artifact name" name="msdyn_artifactname" type="string" customfield="true" />
+      <field displayname="Artifact type" name="msdyn_artifacttype" type="optionsetvalue" customfield="true" />
+      <field displayname="Blob reference" name="msdyn_blobreference" type="string" customfield="true" />
+      <field displayname="Content type" name="msdyn_contenttype" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Label" name="msdyn_label" type="string" customfield="true" />
+      <field displayname="Location" name="msdyn_location" type="string" customfield="true" />
+      <field displayname="Onboarding artifact" name="msdyn_onboardingartifactid" type="guid" primaryKey="true" />
+      <field displayname="Onboarding artifact number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Size" name="msdyn_size" type="number" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_onboardingprojectactivity_artifact" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_onboardingprojectactivity_artifact" m2mTargetEntity="msdyn_onboardingprojectactivity" m2mTargetEntityPrimaryKey="msdyn_onboardingprojectactivityid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_onboardingprojectactivity" displayname="Onboarding guide activity" etc="10075" primaryidfield="msdyn_onboardingprojectactivityid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Activity color" name="msdyn_activitycolor" type="string" customfield="true" />
+      <field displayname="Activity name" name="msdyn_activityname" type="string" customfield="true" />
+      <field displayname="Activity type" name="msdyn_activitytype" type="optionsetvalue" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="Due date" name="msdyn_duedate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Due in days offset" name="msdyn_dueindaysoffset" type="number" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Is managed" name="msdyn_ismanaged" type="bool" customfield="true" />
+      <field displayname="Is organization credentials required" name="msdyn_isorganizationcredentialsrequired" type="bool" customfield="true" />
+      <field displayname="Onboarding guide" name="msdyn_onboardingprojectid" type="entityreference" lookupType="msdyn_onboardingproject" customfield="true" />
+      <field displayname="Onboarding guide activity" name="msdyn_onboardingprojectactivityid" type="guid" primaryKey="true" />
+      <field displayname="Onboarding guide activity number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Ordinal" name="msdyn_ordinal" type="number" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Parent activity template" name="msdyn_parentactivitytemplateid" type="entityreference" lookupType="msdyn_onboardingprojectactivity" customfield="true" />
+      <field displayname="Plugin activity data" name="msdyn_pluginactivitydata" type="string" customfield="true" />
+      <field displayname="Plugin activity id" name="msdyn_pluginactivityid" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_onboardingprojectactivityparticipant" displayname="Onboarding guide activity participant" etc="10076" primaryidfield="msdyn_onboardingprojectactivityparticipantid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Activity status" name="msdyn_activitystatus" type="optionsetvalue" customfield="true" />
+      <field displayname="CDS name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Onboarding guide activity" name="msdyn_onboardingprojectactivityid" type="entityreference" lookupType="msdyn_onboardingprojectactivity" customfield="true" />
+      <field displayname="Onboarding guide activity participant" name="msdyn_onboardingprojectactivityparticipantid" type="guid" primaryKey="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Placeholder label" name="msdyn_placeholderlabel" type="string" customfield="true" />
+      <field displayname="Role" name="msdyn_role" type="optionsetvalue" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_onboardingprojectparticipant" displayname="Onboarding guide participant" etc="10077" primaryidfield="msdyn_onboardingprojectparticipantid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="CDS name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Is notification sent" name="msdyn_isnotificationsent" type="bool" customfield="true" />
+      <field displayname="Is teammate" name="msdyn_isteammate" type="bool" customfield="true" />
+      <field displayname="Is template consumer" name="msdyn_istemplateconsumer" type="bool" customfield="true" />
+      <field displayname="Onboarding guide" name="msdyn_onboardingprojectid" type="entityreference" lookupType="msdyn_onboardingproject" customfield="true" />
+      <field displayname="Onboarding guide participant" name="msdyn_onboardingprojectparticipantid" type="guid" primaryKey="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Placeholder label" name="msdyn_placeholderlabel" type="string" customfield="true" />
+      <field displayname="Role" name="msdyn_role" type="optionsetvalue" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_onboardingrecipientactivitystatus" displayname="Onboarding newbie activity status" etc="10078" primaryidfield="msdyn_onboardingrecipientactivitystatusid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Newbie activity status" name="msdyn_activitystatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Onboarding guide activity" name="msdyn_onboardingprojectactivityid" type="entityreference" lookupType="msdyn_onboardingprojectactivity" customfield="true" />
+      <field displayname="Onboarding newbie activity status" name="msdyn_onboardingrecipientactivitystatusid" type="guid" primaryKey="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_onboardingproject" displayname="Onboarding project" etc="10074" primaryidfield="msdyn_onboardingprojectid" primarynamefield="msdyn_autonumber" disableplugins="true">
+    <fields>
+      <field displayname="Auto send in days offset" name="msdyn_autosendindaysoffset" type="number" customfield="true" />
+      <field displayname="Auto send task reference" name="msdyn_autosendtaskid" type="string" customfield="true" />
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Gallery sharing mode" name="msdyn_gallerypublishmode" type="optionsetvalue" customfield="true" />
+      <field displayname="Gallery template reference" name="msdyn_gallerytemplatereference" type="string" customfield="true" />
+      <field displayname="Invitation reference" name="msdyn_invitationid" type="string" customfield="true" />
+      <field displayname="Is auto send enabled" name="msdyn_isautosendenabled" type="bool" customfield="true" />
+      <field displayname="Is template" name="msdyn_istemplate" type="bool" customfield="true" />
+      <field displayname="Job  start date" name="msdyn_recipientstartdate" type="datetime" customfield="true" dateMode="relative" />
+      <field displayname="Newbie" name="msdyn_recipientid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+      <field displayname="Onboarding guide  name" name="msdyn_projectname" type="string" customfield="true" />
+      <field displayname="Onboarding guide number" name="msdyn_autonumber" type="string" customfield="true" />
+      <field displayname="Onboarding guide owner" name="msdyn_projectownerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+      <field displayname="Onboarding guide status" name="msdyn_status" type="optionsetvalue" customfield="true" />
+      <field displayname="Onboarding project" name="msdyn_onboardingprojectid" type="guid" primaryKey="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_onboardingproject_templateproject" manyToMany="true" isreflexive="true" relatedEntityName="msdyn_onboardingproject_templateproject" m2mTargetEntity="msdyn_onboardingproject" m2mTargetEntityPrimaryKey="msdyn_onboardingprojectid" />
+    </relationships>
+  </entity>
+  <entity name="cdm_positiontype" displayname="Position Type" etc="10028" primaryidfield="cdm_positiontypeid" primarynamefield="cdm_name" disableplugins="true">
+    <fields>
+      <field displayname="Classification" name="cdm_classification" type="optionsetvalue" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Description" name="cdm_description" type="string" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Position Type" name="cdm_positiontypeid" type="guid" primaryKey="true" />
+      <field displayname="Position Type Name" name="cdm_name" type="string" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_talentpool" displayname="Talent pool" etc="10149" primaryidfield="msdyn_talentpoolid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Description" name="msdyn_description" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Talent pool" name="msdyn_talentpoolid" type="guid" primaryKey="true" />
+      <field displayname="Talent pool name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="msdyn_talentpool_candidate" manyToMany="true" isreflexive="false" relatedEntityName="msdyn_talentpool_candidate" m2mTargetEntity="msdyn_candidate" m2mTargetEntityPrimaryKey="msdyn_candidateid" />
+    </relationships>
+  </entity>
+  <entity name="msdyn_talentpoolparticipant" displayname="Talent pool participant" etc="10150" primaryidfield="msdyn_talentpoolparticipantid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="CDS Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="External reference" name="msdyn_externalreference" type="string" customfield="true" />
+      <field displayname="Role" name="msdyn_role" type="optionsetvalue" customfield="true" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Talent pool" name="msdyn_talentpoolid" type="entityreference" lookupType="msdyn_talentpool" customfield="true" />
+      <field displayname="Talent pool participant" name="msdyn_talentpoolparticipantid" type="guid" primaryKey="true" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Worker" name="msdyn_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_talenttag" displayname="Talent tag" etc="10080" primaryidfield="msdyn_talenttagid" primarynamefield="msdyn_tag" disableplugins="true">
+    <fields>
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Tag" name="msdyn_tag" type="string" customfield="true" />
+      <field displayname="Talent tag" name="msdyn_talenttagid" type="guid" primaryKey="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="msdyn_talenttagassociation" displayname="Talent tag association" etc="10081" primaryidfield="msdyn_talenttagassociationid" primarynamefield="msdyn_name" disableplugins="true">
+    <fields>
+      <field displayname="Candidate tracking" name="msdyn_candidatetrackingid" type="entityreference" lookupType="msdyn_candidatetracking" customfield="true" />
+      <field displayname="Name" name="msdyn_name" type="string" customfield="true" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Source" name="msdyn_source" type="optionsetvalue" customfield="true" />
+      <field displayname="Talent tag" name="msdyn_talenttagid" type="entityreference" lookupType="msdyn_talenttag" customfield="true" />
+      <field displayname="Talent tag association" name="msdyn_talenttagassociationid" type="guid" primaryKey="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="cdm_workerpersonaldetail" displayname="Worker Personal Detail" etc="10135" primaryidfield="cdm_workerpersonaldetailid" primarynamefield="cdm_workerpersonaldetailnumber" disableplugins="true">
+    <fields>
+      <field displayname="Birth City" name="cdm_birthcity" type="string" customfield="true" />
+      <field displayname="Birth Country Or Region" name="cdm_birthcountryregion" type="optionsetvalue" customfield="true" />
+      <field displayname="Birthdate" name="cdm_birthdate" type="datetime" customfield="true" />
+      <field displayname="Citizenship Country or Region" name="cdm_citizenshipcountryregion" type="optionsetvalue" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Deceased Date" name="cdm_deceaseddate" type="datetime" customfield="true" />
+      <field displayname="Disabled Veteran Verification Date" name="cdm_disabledveteranverificationdate" type="datetime" customfield="true" />
+      <field displayname="Education" name="cdm_education" type="string" customfield="true" />
+      <field displayname="Ethnic Origin" name="cdm_ethnicoriginid" type="entityreference" lookupType="cdm_ethnicorigin" customfield="true" />
+      <field displayname="ExpatriateEndDate" name="cdm_expatriateenddate" type="datetime" customfield="true" />
+      <field displayname="ExpatriateStartDate" name="cdm_expatriatestartdate" type="datetime" customfield="true" />
+      <field displayname="Father Birth Country Or Region" name="cdm_fatherbirthcountryregion" type="optionsetvalue" customfield="true" />
+      <field displayname="Gender" name="cdm_gender" type="optionsetvalue" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Is Disabled" name="cdm_isdisabled" type="bool" customfield="true" />
+      <field displayname="Is Disabled Veteran" name="cdm_isdisabledveteran" type="bool" customfield="true" />
+      <field displayname="Is Expatriate Ruling Applicable" name="cdm_isexpatriaterulingapplicable" type="bool" customfield="true" />
+      <field displayname="Is Full-Time Student" name="cdm_isfulltimestudent" type="bool" customfield="true" />
+      <field displayname="Marital Status" name="cdm_maritalstatus" type="optionsetvalue" customfield="true" />
+      <field displayname="Military Service End Date" name="cdm_militaryserviceenddate" type="datetime" customfield="true" />
+      <field displayname="Military Service Start Date" name="cdm_militaryservicestartdate" type="datetime" customfield="true" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Mother Birth Country Or Region" name="cdm_motherbirthcountryregion" type="optionsetvalue" customfield="true" />
+      <field displayname="Nationality Country Or Region" name="cdm_nationalitycountryregion" type="optionsetvalue" customfield="true" />
+      <field displayname="Native Language" name="cdm_nativelanguageidid" type="entityreference" lookupType="cdm_language" customfield="true" />
+      <field displayname="Number Of Dependents" name="cdm_numberofdependents" type="number" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Veteran Status" name="cdm_veteranstatusid" type="entityreference" lookupType="cdm_veteranstatus" customfield="true" />
+      <field displayname="Worker" name="cdm_workerid" type="entityreference" lookupType="cdm_worker" customfield="true" />
+      <field displayname="Worker Personal Detail" name="cdm_workerpersonaldetailid" type="guid" primaryKey="true" />
+      <field displayname="Worker Personal Detail Number" name="cdm_workerpersonaldetailnumber" type="string" customfield="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="position" displayname="Position" etc="50" primaryidfield="positionid" primarynamefield="name" disableplugins="true">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Currency" name="transactioncurrencyid" type="entityreference" lookupType="transactioncurrency" />
+      <field displayname="Description" name="description" type="string" />
+      <field displayname="Exchange Rate" name="exchangerate" type="decimal" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="name" type="string" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Parent Position" name="parentpositionid" type="entityreference" lookupType="position" />
+      <field displayname="Position" name="positionid" type="guid" primaryKey="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="annotation" displayname="Note" etc="5" primaryidfield="annotationid" primarynamefield="subject" disableplugins="false">
+    <fields>
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Description" name="notetext" type="string" />
+      <field displayname="Document" name="documentbody" type="string" />
+      <field displayname="File Name" name="filename" type="string" />
+      <field displayname="File Size (Bytes)" name="filesize" type="number" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Is Document" name="isdocument" type="bool" />
+      <field displayname="Language ID" name="langid" type="string" />
+      <field displayname="Mime Type" name="mimetype" type="string" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Note" name="annotationid" type="guid" primaryKey="true" />
+      <field displayname="Object Type " name="objecttypecode" type="string" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Regarding" name="objectid" type="entityreference" lookupType="account|appapaio_candidateanalyticscosinesimilarity|appapaio_candidateanalyticsentitylinks|appapaio_candidateanalyticskeyphrases|appapaio_candidateanalyticslanguage|appapaio_candidateanalyticssentiment|appapaio_candidatepool|appapaio_crewriskassessment|appointment|calendar|cdm_worker|channelaccessprofile|channelaccessprofilerule|channelaccessprofileruleitem|contact|convertrule|crf47_candidateartifactdetails|crf47_referral|duplicaterule|email|emailserverprofile|fax|goal|kbarticle|knowledgearticle|knowledgebaserecord|letter|mailbox|msdyn_candidateartifact|msdyn_jobofferartifact|msdyn_jobofferrulesetartifact|msdyn_joboffertemplate|msdyn_onboardingartifact|msdyn_solutioncomponentdatasource|phonecall|recurringappointmentmaster|routingrule|routingruleitem|sample_challenge|sample_donation|sample_fundraiser|sample_idea|sample_product|sample_reservation|sample_review|sample_teamproject|sharepointdocument|sla|socialactivity|task|workflow" />
+      <field displayname="Step Id" name="stepid" type="string" />
+      <field displayname="Title" name="subject" type="string" />
+    </fields>
+    <relationships />
+  </entity>
+</entities>
