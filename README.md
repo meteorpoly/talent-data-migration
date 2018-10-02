@@ -41,6 +41,8 @@ In order to run the below procedure you will need:
 ![Export start](https://github.com/meteorpoly/talent-data-migration/blob/master/Screen%202.gif "High-level flow")
 ![Export end](https://github.com/meteorpoly/talent-data-migration/blob/master/Screen%203.gif "High-level flow")
 
-
-
+### Data import processing steps
+- Navigate to the subfolder *C:\talent-migration\ConfigurationMigration\"* and double-click on **DataMigrationUtility.exe**
+- Select *Create Schema* and press **Continue** (next screen will open)
+- Select *Deployment Type* **Office 365**
 
