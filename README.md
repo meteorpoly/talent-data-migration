@@ -1,5 +1,5 @@
 # Talent Data Transfer across Tenants
-Dynamics 365 for Talent Data Migration Utility
+## Dynamics 365 for Talent Data Migration Utility
 
 Following scenarios could be enabled by this tool:
 
@@ -10,4 +10,4 @@ Following scenarios could be enabled by this tool:
 - Quick and non-production back-up and restore 
 
 Inline-style: 
-![alt text](https://appapaio001-my.sharepoint.com/personal/apostolis_appapaio001_onmicrosoft_com/Documents/Talent%20People%20Card/High-level%20synch%20flow.gif "High-level flow")
+![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/High-level%20synch%20flow.gif "High-level flow")
