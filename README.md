@@ -19,5 +19,10 @@ In order to run the below procedure you will need:
 ### Talent Instance(s) with a
 - CDS for Apps **Source** Environment
 - CDS for Apps **Target** Environment
-- Administrative rights on both environments
-- Download the DataMigrationUtility from [here](https://github.com/meteorpoly/talent-data-migration/raw/master/ConfigurationMigration.zip)
+- **Administrative** rights on **both** environments
+
+### Setup instructions
+- Download the **TalentMigration** from [here](https://github.com/meteorpoly/talent-data-migration/raw/master/TalentMigration.zip)
+- Create a new folder under your C: drive and call it **talent-migration**
+- Extract the  downloaded contents file into the newly created folder
+- Navigate to the subfolder *C:\talent-migration\ConfigurationMigration\"* and double-click on **DataMigrationUtility.exe**
