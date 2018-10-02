@@ -28,5 +28,8 @@ In order to run the below procedure you will need:
 
 ### Data import processing steps
 - Navigate to the subfolder *C:\talent-migration\ConfigurationMigration\"* and double-click on **DataMigrationUtility.exe**
-- 
+- Select *Create Schema* and press **Continue** (next screen will open)
+- Select *Deployment Type* **Office 365**
+- Select checkbox **Display a list of available organizations**
+- Login with your Source Environment admin account (eg. username@your.tenant.onmicrosoft.com)
 
