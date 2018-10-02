@@ -31,11 +31,11 @@ In order to run the below procedure you will need:
 - Select *Create Schema* and press **Continue** (next screen will open)
 - Select *Deployment Type* **Office 365**
 - Select checkbox **Display a list of available organizations**
-- Login with your Source Environment admin account (eg. user@yourtenant.onmicrosoft.com)
-- Select the desired Source Environment to copy from and press **Login**
+- Login with your **Source** Environment admin account (eg. user@yourtenant.onmicrosoft.com)
+- Select the desired **Source** Environment to copy from and press **Login**
 - On the new screen select *File -->* **Load Schema**
 - Choose one of the two templates provided in your extracted folder. **Full Load for Multi-Tenant Environments.xml** should be used if you want to export / import Talent data **across multiple Tenants** and **Full Load for Single-Tenant Environments.xml** should be used for **intra-tenant** scenarios. Both templates include most of the attract, offer and onboarding experience but **you will need to re-check and maybe adjust the data entities and fields to better fit your data needs**
-- Once you are done with your adjustments click on **Save and Export** and save your configuration under a new name in the same folder. ou will be asked to export the data now so just click yes
+- Once you are done with adjustments click on **Save and Export** and save your configuration under a new name in the same folder. You will be asked to export the data now so just click **Yes**
 - Click on the *...* button next to the field **Save data to file** and give your export zip a proper name --> press **Save** and then **Export Data**. You should dialogs similar to:
 
 ![Export start](https://github.com/meteorpoly/talent-data-migration/blob/master/Screen%202.gif "High-level flow")
@@ -43,6 +43,14 @@ In order to run the below procedure you will need:
 
 ### Data import processing steps
 - Navigate to the subfolder *C:\talent-migration\ConfigurationMigration\"* and double-click on **DataMigrationUtility.exe**
-- Select *Create Schema* and press **Continue** (next screen will open)
+- Select *Import Data* and press **Continue** (next screen will open)
 - Select *Deployment Type* **Office 365**
+- Select *Deployment Type* **Office 365**
+- Select checkbox **Display a list of available organizations**
+- Login with your **Target** Environment admin account (eg. user@yourtenant.onmicrosoft.com)
+- Select the desired **Target** Environment to import into and press **Login**
+- On the new screen click on the *...* button next to the field *Zip File -->* and select the previously exported source zip file
+- Click **Import Data** and wait until the process is finsished (it might run more than 10 minutes, depending on volume of course)
 
+### Validate your import
+- Opent the Target Talent Environment at https://attract.talent.dynamics.com/jobs for instance 
