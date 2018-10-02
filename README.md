@@ -39,7 +39,7 @@ In order to run the below procedure you will need:
 - Click on the *...* button next to the field **Save data to file** and give your export zip a proper name --> press **Save** and then **Export Data**
 - You should see a similar dialog to this
 ## 
-![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/Screen.gif "High-level flow")
+![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/Screen%202.gif "High-level flow")
 
 
 
