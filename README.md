@@ -1,6 +1,7 @@
 # Talent Data Transfer across Tenants
 ## Dynamics 365 for Talent Data Migration Utility
 
+In this guide you will learn how to copy your Talent CDS for Apps data from a source to a target environment and even across tenants.
 Following scenarios could be enabled by this tool:
 
 - You have created great Templates, Job profiles, On-boarding Guides, On-boarding contacts, Hiring teams etc. which you would like to share across your team or organization
@@ -11,3 +12,12 @@ Following scenarios could be enabled by this tool:
 
 ## High-Level Sync Flow: 
 ![High-Level Sync Flow](https://github.com/meteorpoly/talent-data-migration/blob/master/High-level%20synch%20flow.gif "High-level flow")
+
+## Prerequisites
+In order to run the below procedure you will need:
+
+Talent Instance(s) with a
+CDS for Apps Source Environment
+CDS for Apps Target Environment
+Administrative rights on both environments
+Download the DataMigrationUtility from here
